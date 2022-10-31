@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('Updates 📢', url='https://t.me/josprojects/221')
+            InlineKeyboardButton('Updates 📢', url='https://t.me/+BixProBUQBo4MWM9')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('👉 ⚠️ Press me... 🥰 👈', url="https://t.me/josprojects")
+                InlineKeyboardButton('🔔 Join Updates Channel', url="https://t.me/+BixProBUQBo4MWM9")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -57,9 +57,10 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>👇 Official Projects Channels 👇</b>",
+                text=f'<b>Hello 👋 {u.mention},</b>\n\nWelcome To <b>{message.chat.title} 💐</b>\n\nMy Name Is <b><a href="https://t.me/ItsUniqueMovies2022_Bot">ITS UNIQUE MOVIES BOT</a></b>,<b> I Can Provide Movies/Series In This Group.Just Type The Actual Name Of The Movie/Series.You Will Get The Movie/Series If You Write Correct Spelling.If You Do not Get The Movie/Series It Is Sure That You Have Written Incorrect Spelling Or Your Requested Movie/Series Does Not Exit In My Database 😐.</b>',
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
+    
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
