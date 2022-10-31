@@ -4,12 +4,10 @@ pymongo[srv]
 motor
 marshmallow
 umongo
-gTTS
 asyncio==3.4.3
 aiohttp==3.7.4
 aiofiles
 requests
-pyshorteners
 bs4
 imdbpy==2021.4.18
 youtube-search-python==1.4.6
@@ -20,5 +18,4 @@ wget
 python-arq
 ffmpeg-python
 requests
-ytthumb
 pytz
