@@ -246,7 +246,7 @@ async def start(client, message):
                ],[
                InlineKeyboardButton(text="⁉️ Want To Save/Share This File", callback_data="scst")
                ],[
-               InlineKeyboardButton('🗑 Close File', callback_data='close_data')
+               InlineKeyboardButton('🗑 Close File', callback_data='close')
                ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
