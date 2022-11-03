@@ -9,3 +9,15 @@
 </a>
 </p>
 </details>
+
+<details><summary>Deploy to VPS</summary>
+<p>
+<pre>
+git clone https://github.com/TGDarkLord/UniqueMovie-Bot
+# Install Packages
+pip3 install -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
