@@ -1,4 +1,4 @@
-git+https://github.com/MrMKN/pyrogram@inline-m
+pyrogram==2.0.57
 tgcrypto
 pymongo[srv]
 motor
